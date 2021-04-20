@@ -132,7 +132,6 @@ body {
 
 .content-info {
   margin-top: 40px;
-  height: 598px;
   background-color: #242423;
 }
 
@@ -143,8 +142,8 @@ body {
 .footer {
   background: #242423;
   width: 100%;
-  height: 125px;
-  font-size: 1em;
+  height: 55px;
+  font-size: 1.2em;
   z-index: 2;
   align-items: center;
   text-align: center;
@@ -160,13 +159,27 @@ body {
 
 .footer-left {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   float: left;
   align-items: flex-start;
   padding-left: 50px;
 }
 
 .footer-left-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  align-items: flex-start;
+  padding-right: 50px;
+  font-size: 1.5em;
+}
+
+.footer-right-item {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -278,15 +291,37 @@ body {
   }
 
   .footer {
-    display: flex;
-    margin: auto;
+
   }
 
   .content-box {
     display: block;
   }
 
+  .content {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+}
 
+@media only screen and (max-width: 1200px) {
+  .footer {
+    height: 150px;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+      flex-direction: column;
+      font-size: 2em;
+  }
+
+  .image-box {
+    padding-right: 0px;
+  }
 
 }
 
