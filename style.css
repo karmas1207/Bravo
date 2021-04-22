@@ -73,7 +73,7 @@ body {
   display: flex;
   font-size: 1.5em;
   flex-grow: 1;
-
+  padding-right: 100px;
 }
 
 .menu-icon {
@@ -378,6 +378,7 @@ body {
 
 .footer-right-item {
   padding-top: 10px;
+  padding-right: 10px;
   padding-bottom: 10px;
 }
 
