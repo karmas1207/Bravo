@@ -9,9 +9,9 @@
   <body>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">START</a>
-        <a href="#">TJÄNSTER</a>
-        <a href="#">KONTAKT</a>
+        <a href="#"><div class="menu-icon"><i class="fas fa-home"></i></div>START</a>
+        <a href="#"><div class="menu-icon"><i class="fas fa-car"></i></div>TJÄNSTER</a>
+        <a href="#"><div class="menu-icon"><i class="fas fa-address-card"></div></i>KONTAKT</a>
       </div>
       <div class="container">
           <div class="header">
@@ -71,30 +71,89 @@
             </div>
           </div>
           <div class="content-box-2">
-            <button class="button" type="button" name="button">KONTAKTA OSS FÖR PRISFÖRSLAG</button>
-            <div class="content-text">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <div class="poster">
+              <button class="button" type="button" name="button">SOLFILM</button>
+                <div class="content-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
             </div>
-            <div class="content-info">
-
+            <br>
+            <div class="poster">
+              <button class="button" type="button" name="button">WRAP</button>
+                <div class="content-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
             </div>
+            <br>
+            <div class="poster">
+              <button class="button" type="button" name="button">WRAP</button>
+                <div class="content-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
+            </div>
+            <br>
           </div>
         </div>
       </div>
+      </div>
+      <div class="content-box-3">
+        <div class="content-info">
+          <div class="contact-container">
+            <center><p>Använd formuläret nedan för att kontakta oss, <br>
+            du kan även ringa oss på <p1>(+46)739319943</p1></p></center>
+            <br>
+            <form action="webform.php" method="POST" class="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Namn" tabindex="1" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Telefon" tabindex="3" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Skriv ett meddelande..." tabindex="4"></textarea>
+              </div>
+              <div>
+                <br>
+                <button type="submit" class="btn">Skicka</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="map">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Tagenev%C3%A4gen%2062%20%20425%2037%20Hisings%20%20K%C3%A4rra&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">adding google map to wordpress</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+        </div>
+
       </div>
       <div class="footer">
         <div class="footer-left">
           <div class="footer-left-item"><i class="fas fa-phone fa-lg"></i> (+46)739319943</div>
           <div class="footer-left-item"><i class="fas fa-map-marked-alt fa-lg"></i> Tagenevägen 62 - 425 37 Hisings Kärra</div>
-          <div class="footer-left-item"><i class="far fa-envelope-open fa-lg"></i> info@bravodekor.se</div>
+          <div class="footer-left-item"><i class="far fa-envelope-open fa-lg"></i> Info@bravodekor.se</div>
         </div>
         <div class="footer-right">
           <div class="footer-right-item"><i class="fab fa-facebook fa-lg"></i></div>
           <div class="footer-right-item"><i class="fab fa-instagram fa-lg"></i></div>
         </div>
+      </div>
+      <div class="footer-mobile">
+        <i class="fas fa-mobile-alt fa-lg"></i>
+        <i class="fas fa-map-marked-alt fa-lg"></i>
+        <i class="far fa-envelope-open fa-lg"></i>
+        <i class="fab fa-facebook fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
       </div>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5c8fdf296c.js" crossorigin="anonymous"></script>

@@ -77,6 +77,11 @@ body {
   font-size: 2em;
 }
 
+.sidenav-icon {
+  padding-right: 20px;
+  font-size: 1.5em;
+}
+
 .menu a {
   color: white;
   text-decoration: none;
@@ -101,14 +106,16 @@ body {
   width: 100%;
   overflow: hidden;
   color: #415a77;
-
   font-family: 'Roboto Condensed', sans-serif;
   flex-grow: 1;
+  height: 100%;
 }
 
 .content {
   padding-bottom: 17px;
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .content-box {
@@ -127,12 +134,93 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 .content-info {
-  margin-top: 40px;
+  padding-bottom: 50px;
   background-color: #242423;
+}
+
+.contact-container {
+  margin: auto;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-container p {
+  color: white;
+  font-style: normal;
+}
+
+.contact-container p1 {
+  color: #80b918;
+}
+
+.map {
+
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 35px;
+}
+
+.form-group {
+  margin-top: 10px;
+  color: black;
+}
+
+.form-label {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9em;
+  color: white;
+}
+
+.form-control {
+  width: 600px;
+  font-size: 0.7em;
+  background-color: #E0E1DD;
+  transition: all .3s;
+  border-style: none none none none;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 15px;
+}
+
+.form-control::placeholder:active {
+  color: #242423;
+}
+
+.form-control::placeholder:hover {
+  color: white;
+}
+
+.form-control:hover {
+  background: #242423;
+  color: white;
+}
+
+.form-control:invalid:focus{
+  border-color:red;
+}
+.form-control:valid:focus{
+  border-color:green;
+}
+
+.btn {
+  font-size: 0.7em;
+  width: 200px;
+  height: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  right: 0;
 }
 
 .ad {
@@ -142,14 +230,34 @@ body {
 .footer {
   background: #242423;
   width: 100%;
-  height: 55px;
-  font-size: 1.2em;
+  height: 60px;
+  font-size: 1em;
   z-index: 2;
   align-items: center;
   text-align: center;
   color: #E0E1DD;
-  padding-top: 15px;
+  margin: auto;
+  padding-top: 20px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-mobile {
+  display: none;
+  background: #242423;
+  width: 100%;
+  height: 50px;
+  font-size: 2em;
+  z-index: 2;
+  align-items: center;
+  text-align: center;
+  color: #E0E1DD;
+  margin: auto;
+  padding-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.footer-mobile i {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer i {
@@ -184,13 +292,17 @@ body {
   padding-bottom: 10px;
 }
 
+.poster {
+  margin-bottom: 25px;
+}
+
 .button {
   padding: 10px;
   color: #242423;
   font-weight: bold;
   font-size: 3em;
   background: #80b918;
-  height: 150px;
+  height: 100px;
   width: 100%;
   border: none;
   margin: 0;
@@ -279,6 +391,35 @@ body {
 }
 
 
+@media only screen and (max-width: 767px) {
+  .mobile-menu,
+  .mobile-menu * {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    justify-content: flex-end;
+  }
+
+  .content-box {
+    display: block;
+  }
+
+  .content {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+
+  .button {
+    font-size: 2em;
+  }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -291,6 +432,15 @@ body {
   }
 
   .footer {
+      font-size: 1em;
+      display: none;
+  }
+
+  .footer-left {
+
+  }
+
+  .footer-right {
 
   }
 
@@ -302,9 +452,23 @@ body {
     padding-bottom: 2px;
     padding-top: 2px;
   }
+
+  .contact-container {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    width: 100%
+  }
+
+  .form-control {
+    width: 300px;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   .footer {
     height: 150px;
   }
@@ -316,12 +480,13 @@ body {
 
   .footer-right {
       flex-direction: column;
-      font-size: 2em;
+      font-size: 1.4em;
   }
 
   .image-box {
     padding-right: 0px;
   }
+
 
 }
 
