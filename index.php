@@ -147,6 +147,15 @@
              <p>Använd formuläret nedan för att kontakta oss, <br>
              du kan även ringa oss på <p1><a href="tel:+46739319943">(+46)739319943</a></p1></p>
              <br>
+              <?php
+              if($message_sent):
+              ?>
+
+              <h1>Tack för ditt meddelande.</h1>
+
+              <?php
+              else:
+              ?>
              <form action="index.php" method="POST" class="form">
                <div class="form-group">
                  <input type="text" class="form-control" id="name" name="name" placeholder="Namn" tabindex="1" required>
@@ -164,8 +173,10 @@
                  <br>
                  <button type="submit" class="btn">Skicka</button>
                </div>
-
              </form>
+             <?php
+              endif;
+              ?>
            </div>
          </div>
          <div class="sigill"><a href="https://www.uc.se/risksigill2/?showorg=930802-8670&language=swe&special="><img src="sigill.svg" alt="UC"></a></div>
