@@ -1,8 +1,15 @@
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+document.getElementById('main').onclick = closeNav;
+document.getElementById('sidemenu').addEventListener('click', openNav);
+document.querySelector('.closebtn').addEventListener('click', closeNav);
+
+
+function openNav(e) {
+  e.stopPropagation()
+  document.getElementById("mySidenav").style.width = "250px";;
 }
 
-function closeNav() {
+function closeNav(e) {
+
   document.getElementById("mySidenav").style.width = "0";
 }
 

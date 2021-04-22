@@ -6,7 +6,7 @@ input {
 appearance: none;
 }
 
-#main {
+.main {
   padding: auto;
   margin: 0;
 }
@@ -24,6 +24,7 @@ html::-webkit-scrollbar {
 body {
   background-color: #333533;
   margin: 0;
+  height: 100vh;
 }
 
 .container,
