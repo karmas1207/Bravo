@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
 #main {
   padding: auto;
   margin: 0;
@@ -38,7 +44,6 @@ body {
   position: fixed;
   overflow: hidden;
   z-index: 2;
-
 }
 
 .logo {
@@ -146,15 +151,37 @@ body {
   margin: auto;
   color: white;
   font-size: 1.5em;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+
 }
 
 .contact-container p {
   color: white;
   font-style: normal;
+  padding-left: 25px;
+}
+
+.contact-container a {
+  color: #80b918;
+  font-style: normal;
+  text-decoration: none;
+  transition: .3s color;
+}
+
+.contact-container a:hover {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.contact-container a:visited {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .contact-container p1 {
@@ -171,7 +198,6 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: 'Roboto Condensed', sans-serif;
-  margin-top: 35px;
 }
 
 .form-group {
@@ -216,15 +242,36 @@ body {
 }
 
 .btn {
-  font-size: 0.7em;
-  width: 200px;
+  color: #242423;
+  font-size: 0.8em;
+  background: #80b918;
   height: 50px;
-  font-family: 'Roboto Condensed', sans-serif;
-  right: 0;
+  width: 330px;
+  border: none;
+  margin: 0;
+  outline: 2px solid rgba(0,0,0,0.0);
+  transition: background-color 0.5s;
+  box-shadow: 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  top: 0;
+}
+
+.btn:active {
+  background: #80b918;
+}
+
+.btn:hover {
+  background: white;
 }
 
 .ad {
   float: right;
+}
+
+.sigill {
+  background-color: #242423;
+  text-align: center;
+  padding-left: 55px;
 }
 
 .footer {
@@ -235,33 +282,75 @@ body {
   z-index: 2;
   align-items: center;
   text-align: center;
-  color: #E0E1DD;
+  color: white;
   margin: auto;
   padding-top: 20px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .footer-mobile {
   display: none;
+  flex-direction: column;
   background: #242423;
   width: 100%;
-  height: 50px;
+  height: 300px;
   font-size: 2em;
   z-index: 2;
-  align-items: center;
-  text-align: center;
-  color: #E0E1DD;
+  color: white;
   margin: auto;
   padding-top: 20px;
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+
+  text-align: center;
 }
+
+.footer-mobile a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-mobile a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.footer-mobile a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
+.footer-mobile-item {
+  font-size: 0.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .footer-mobile i {
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 2em;
+}
+
+.footer-mobile i {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer i {
-  padding-left: 25px;
   padding-right: 5px;
 }
 
@@ -276,6 +365,7 @@ body {
 .footer-left-item {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-left: 25px;
 }
 
 .footer-right {
@@ -436,12 +526,8 @@ body {
       display: none;
   }
 
-  .footer-left {
-
-  }
-
-  .footer-right {
-
+  .image {
+    padding-top: 2px;
   }
 
   .content-box {
@@ -464,7 +550,7 @@ body {
   }
 
   .footer-mobile {
-    display: block;
+    display: flex;
   }
 }
 
